@@ -1,9 +1,8 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FaPlus } from 'react-icons/fa';
 
-const Exercise = ({ exercise }) => {
+const Exercise = ({ exercise, handleAddTime }) => {
     const { age, body, picture, time, title } = exercise
     return (
         <div className='col'>
@@ -18,10 +17,10 @@ const Exercise = ({ exercise }) => {
                         For Age :  {age}
                     </Card.Text>
                     <Card.Text className='fw-semibold text-color' >
-                        Time required :  {time}
+                        Time required :  {time}s
                     </Card.Text>
                     <div className='text-center '>
-                        <button className='btn btn-info fw-semibold text-color'>ADD <FaPlus></FaPlus></button>
+                        <button onClick={() => handleAddTime(exercise)} className='btn btn-info fw-semibold text-color'>ADD <FaPlus></FaPlus></button>
                     </div>
                 </Card.Body>
             </Card>

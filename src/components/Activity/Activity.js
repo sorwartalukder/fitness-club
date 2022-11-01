@@ -2,7 +2,7 @@ import React from 'react';
 import { HiCheckCircle } from "react-icons/hi";
 import UserProfile from '../UserProfile/UserProfile';
 
-const Activity = () => {
+const Activity = ({ totalTime }) => {
     return (
         <div className=' py-5 px-4 position-sticky top-0'>
             <UserProfile></UserProfile>
@@ -25,7 +25,7 @@ const Activity = () => {
                 <h4 className='mt-5 text-color'>Exercise Details</h4>
                 <div className='d-flex justify-content-between px-3 bg-info rounded mt-4 py-3'>
                     <h5>Exercise time</h5>
-                    <h5 className='text-black-50'>00 seconds</h5>
+                    <h5 className='text-black-50'>{totalTime} seconds</h5>
                 </div>
                 <div className='d-flex justify-content-between px-3 bg-info rounded mt-4 py-3'>
                     <h5>Break time</h5>

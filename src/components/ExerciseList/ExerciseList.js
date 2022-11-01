@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import { FaDumbbell } from "react-icons/fa";
 
-const ExerciseList = () => {
+const ExerciseList = ({ handleAddTime }) => {
     const [exerciseList, setExerciseList] = useState([])
     useEffect(() => {
         fetch('data.json')
@@ -17,6 +17,7 @@ const ExerciseList = () => {
                     exerciseList.map(exercise => <Exercise
                         key={exercise.id}
                         exercise={exercise}
+                        handleAddTime={handleAddTime}
                     ></Exercise>)
                 }
             </div>
