@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Image, Row } from 'react-bootstrap';
 
 const Home = () => {
     return (
@@ -7,6 +7,10 @@ const Home = () => {
             <Row>
 
                 <Col lg='8'>
+                    <div className='d-flex'>
+                        <Image></Image>
+                        <h1>Fitness Club</h1>
+                    </div>
                     card
                 </Col>
 
