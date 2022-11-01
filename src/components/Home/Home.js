@@ -9,10 +9,15 @@ import Activity from '../Activity/Activity';
 
 const Home = () => {
     const [totalTime, setTotalTime] = useState(0)
+    const [breakTime, setBreakTime] = useState(0)
     const handleAddTime = (exercise) => {
         const selectedTime = exercise.time;
         setTotalTime(totalTime + selectedTime);
         console.log(totalTime)
+    }
+    const handleBreakTime = breakTime => {
+        setBreakTime(0)
+        setBreakTime(breakTime.time)
     }
     return (
         <div className='body-bg'>
@@ -27,7 +32,11 @@ const Home = () => {
                     </Col>
 
                     <Col className='bg-white position-relative' lg='4'>
-                        <Activity totalTime={totalTime}></Activity>
+                        <Activity
+                            totalTime={totalTime}
+                            breakTime={breakTime}
+                            handleBreakTime={handleBreakTime}
+                        ></Activity>
                     </Col>
 
                 </Row>
