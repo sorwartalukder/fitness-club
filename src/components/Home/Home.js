@@ -15,13 +15,12 @@ const Home = () => {
                     <Col lg='8'>
                         <div className='d-flex align-items-center my-5 text-color'>
                             <Image className='me-2 border border-5 rounded' src={logo} style={{ width: '80px' }}></Image>
-                            <h1 className=''>Fitness Club</h1>
+                            <h1 className='fw-bold'>Fitness Club</h1>
                         </div>
-
                         <ExerciseList></ExerciseList>
                     </Col>
 
-                    <Col lg='4'>
+                    <Col className='bg-white position-relative' lg='4'>
                         <Activity></Activity>
                     </Col>
 

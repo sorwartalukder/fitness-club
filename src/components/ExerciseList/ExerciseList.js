@@ -10,7 +10,7 @@ const ExerciseList = () => {
             .then(data => setExerciseList(data))
     }, [])
     return (
-        <div>
+        <div className='mb-5'>
             <h3 className=' text-color py-3'>Select today’s exercise <FaDumbbell className='ms-2 fs-1'></FaDumbbell></h3>
             <div className='row row-cols-1 row-cols-md-2 px-lg-5 g-4'>
                 {

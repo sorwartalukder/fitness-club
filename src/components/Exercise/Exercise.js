@@ -7,7 +7,7 @@ const Exercise = ({ exercise }) => {
     const { age, body, picture, time, title } = exercise
     return (
         <div className='col'>
-            <Card className='bg-white'>
+            <Card className='bg-white shadow border border-5'>
                 <Card.Img variant="top" src={picture} style={{ height: '200px' }} />
                 <Card.Body>
                     <Card.Title className='fw-bold text-color'>{title}</Card.Title>

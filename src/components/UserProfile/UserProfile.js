@@ -10,12 +10,12 @@ const UserProfile = () => {
                 <div className='d-flex'>
                     <Image roundedCircle src={user} style={{ height: '60px' }}></Image>
                     <div className='ms-2'>
-                        <h5 className=' fw-bold mb-0'>Sorwar Talukder</h5>
+                        <h5 className=' fw-bold mb-0 text-color'>Sorwar Talukder</h5>
                         <address><small><HiLocationMarker className='fs-5 me-1' />Dhaka, Bangladesh</small></address>
                     </div>
                 </div>
             </div>
-            <div className='d-flex justify-content-around body-bg rounded mt-4 py-2'>
+            <div className='d-flex justify-content-around bg-info rounded mt-4 py-2'>
                 <div>
                     <h3 className='d-inline '>55 </h3>
                     <p className='d-inline text-black-50'>kg</p>
