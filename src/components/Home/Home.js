@@ -5,6 +5,7 @@ import './Home.css'
 
 import ExerciseList from '../ExerciseList/ExerciseList';
 import Activity from '../Activity/Activity';
+import Blog from '../Blog/Blog';
 
 
 const Home = () => {
@@ -36,7 +37,7 @@ const Home = () => {
                         <ExerciseList handleAddTime={handleAddTime}></ExerciseList>
                     </Col>
 
-                    <Col className='bg-white position-relative' lg='4'>
+                    <Col className='bg-white position-relative rounded-bottom' lg='4'>
                         <Activity
                             totalTime={totalTime}
                             breakTime={breakTime}
@@ -45,6 +46,7 @@ const Home = () => {
                     </Col>
 
                 </Row>
+                <Blog></Blog>
             </Container>
         </div>
     );
