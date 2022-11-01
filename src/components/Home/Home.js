@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import logo from '../../assets/images/logo.jpg'
 import './Home.css'
@@ -16,9 +16,14 @@ const Home = () => {
         console.log(totalTime)
     }
     const handleBreakTime = breakTime => {
-        setBreakTime(0)
+        localStorage.setItem("breakTime", breakTime.time);
         setBreakTime(breakTime.time)
     }
+
+    useEffect(() => {
+        const storageBreakTime = localStorage.getItem("breakTime");
+        setBreakTime(storageBreakTime)
+    }, [])
     return (
         <div className='body-bg'>
             <Container>
