@@ -37,7 +37,7 @@ const Home = () => {
                         <ExerciseList handleAddTime={handleAddTime}></ExerciseList>
                     </Col>
 
-                    <Col className='bg-white position-relative rounded-bottom' lg='4'>
+                    <Col className='bg-white position-relative rounded-bottom mt-5 mt-lg-0' lg='4'>
                         <Activity
                             totalTime={totalTime}
                             breakTime={breakTime}
